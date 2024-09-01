@@ -1,0 +1,100 @@
+.individual-dashboard-container {
+    padding: 20px;
+    position: relative;
+  }
+  
+  .individual-logout-button {
+    position: absolute;
+    width: 150px;
+    top: 20px;
+    right: 20px;
+    background-color: #f44;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .individual-dashboard-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .individual-loading-message,
+  .individual-error-message {
+    font-size: 18px;
+    color: #d9534f; /* Error color */
+  }
+  
+  .individual-job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .individual-job-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .individual-job-details {
+    margin-bottom: 40px; /* Increased margin to ensure space for the apply button */
+  }
+  
+  .individual-company-name {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .individual-job-title {
+    font-weight: semi-bold;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .individual-job-description {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .individual-job-email,
+  .individual-job-phone {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .individual-apply-button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .individual-apply-button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .individual-job-card {
+      padding: 15px;
+    }
+  
+    .individual-apply-button {
+      position: static;
+      margin-top: 10px;
+      display: block;
+      text-align: center;
+    }
+  }
+  
