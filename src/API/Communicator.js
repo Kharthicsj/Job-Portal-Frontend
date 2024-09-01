@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_API_URL = 'http://localhost:4000';
+const BASE_API_URL = 'https://job-portal-backend-psap.onrender.com';
 
 export const IndividualSignupCommunicator = async (userData) => {
     try {
