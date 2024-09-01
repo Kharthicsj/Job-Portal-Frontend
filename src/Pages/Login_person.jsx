@@ -6,6 +6,7 @@ import axios from 'axios';
 import '../Styles/Login.css';
 import loginImg from '../assets/Login.jpeg';
 import { Link } from 'react-router-dom'; 
+import { IndividualSignin } from '../API/Communicator';
 
 const LoginPerson = () => {
   const [username, setUsername] = useState('');
@@ -20,7 +21,7 @@ const LoginPerson = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:4000/IndividualsSignin', {
+      const response = await axios.post('https://job-portal-backend-psap.onrender.com/IndividualsSignin', {
         username,
         password,
       });

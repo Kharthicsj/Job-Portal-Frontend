@@ -19,7 +19,7 @@ const PersonSignup = () => {
     try {
       await IndividualSignupCommunicator(userData);
       alert('Signup successful!');
-      window.location.href = '/'; // Navigate to login page
+      window.location.href = '/'; 
     } catch (error) {
       setError(error.message);
     } finally {
